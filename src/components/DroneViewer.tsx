@@ -2,7 +2,8 @@ import { useRef, useEffect, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera, Grid, Environment } from '@react-three/drei';
 import * as THREE from 'three';
-import { STLLoader } from 'three/examples/jsm/loaders/STLLoader';
+// @ts-ignore
+import { STLLoader } from 'three/examples/jsm/loaders/STLLoader.js';
 
 interface DroneModelProps {
   stlPath: string;
